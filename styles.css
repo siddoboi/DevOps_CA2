@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif; background: linear-gradient(135deg, #0f766e, #1e3a8a); padding: 24px 16px; }
+.card { background: #fff; width: 100%; max-width: 440px; padding: 28px; border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,.25); }
+h1 { margin: 0; font-size: 22px; color: #0f172a; }
+.sub { margin: 4px 0 18px; color: #64748b; font-size: 13px; }
+label { display: block; font-size: 13px; font-weight: 600; color: #334155; margin-top: 12px; }
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%; margin-top: 4px; padding: 9px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; }
+.radios { display: flex; gap: 16px; }
+.radios label { font-weight: 400; margin-top: 6px; }
+.actions { display: flex; gap: 10px; margin-top: 18px; }
+button { flex: 1; padding: 10px; border: 0; border-radius: 6px; font-size: 14px; cursor: pointer; background: #0f766e; color: #fff; }
+button.secondary { background: #94a3b8; }
+#message { margin: 14px 0 0; font-size: 14px; min-height: 18px; }
+#message.error { color: #b91c1c; }
+#message.success { color: #15803d; }

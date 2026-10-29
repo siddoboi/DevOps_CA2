@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Student Feedback Form</h1>
+    <p class="sub">Symbiosis Institute of Technology, Nagpur</p>
+    <form id="feedbackForm" novalidate>
+      <label for="name">Name *</label>
+      <input id="name" name="name" type="text" placeholder="Enter your full name">
+
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com">
+
+      <label for="mobile">Mobile *</label>
+      <input id="mobile" name="mobile" type="tel" placeholder="10-digit mobile number">
+
+      <label for="department">Department *</label>
+      <select id="department" name="department">
+        <option value="">Select Department</option>
+        <option>CSE</option><option>AIML</option><option>ENTC</option><option>Mechanical</option>
+      </select>
+
+      <label>Gender *</label>
+      <div class="radios">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+
+      <label for="feedback">Feedback *</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Minimum 10 words"></textarea>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="reset" id="resetBtn" class="secondary">Reset</button>
+      </div>
+      <p id="message" role="status"></p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
