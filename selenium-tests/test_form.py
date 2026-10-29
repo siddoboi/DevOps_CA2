@@ -39,7 +39,7 @@ class TestStudentFeedbackForm(unittest.TestCase):
         return d.find_element(By.ID, "message").text
 
     def test_page_title(self):
-        self.assertEqual(self.driver.title, "Wrong Title")
+        self.assertEqual(self.driver.title, "Student Feedback Form")
 
     def test_valid_submission(self):
         self.assertIn("successfully", self.fill())
