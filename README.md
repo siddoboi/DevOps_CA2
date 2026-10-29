@@ -9,3 +9,4 @@ Run tests locally:
 
     pip install selenium
     python selenium-tests/test_form.py
+CI trigger test
